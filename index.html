@@ -3,30 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strike</title>
+    <title>Strike - Online Courses Platform</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- components  -->
+    <link rel="stylesheet" href="/components/header.css">
+     <link rel="stylesheet" href="./components/hero.css">
+     <link rel="stylesheet" href="./components/earth.css">
+     <link rel="stylesheet" href="./components/wordFlow.css">
+     <link rel="stylesheet" href="./components/course.css">
+     <link rel="stylesheet" href="./components/instructor.css">
+     <link rel="stylesheet" href="./components/contactUs.css">
+     <link rel="stylesheet" href="./components/footer.css">
+
+
 </head>
 <body>
-    <header>
-        <div class="nav-container">
-            <!-- logo -->
-            <!-- <a href="" class="logo">coder<span>Army</span></a> -->
-             <a href="#home" class="logo"><img src="./image/logo1.png" alt=""></a>
-            <!-- navbar -->
-            <nav class="nav-content">
-                <a href="#home" >Home</a>
-                <a href="#courses" >Courses</a>
-                <a href="#contacts">Contact Us</a>
-                <a href="#about" >About</a>
-            </nav>
-            <!-- login button -->
-             <a href="" class="login-btn cta-button">Login</a>
-             <!-- mobile menu icon -->
-            <div class="menu-icon">☰</div>
-        </div>
+
+    <!-- ======= header section ======== -->
+    <header id="header">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <a href="#home">
+                    <img src="./image/logo1.png" alt="STRIKE" class="logo-image">
+                </a>
+            </div>
+
+            <!-- checkbox for mobile menu -->
+             <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox"/>
+
+             <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#courses" class="nav-link">Courses</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contacts" class="nav-link">Contacts</a>
+                
+                <div class="nav-actions-mobile">
+                    <a href="#login" class="btn-outline">Login</a>     
+                    <a href="#login" class="btn-primary">Sign Up</a>
+                </div>
+             </div>
+
+             <div class="nav-actions">
+              <a href="#login" class="btn-outline">Login</a>     
+            <a href="#login" class="btn-primary">Sign Up</a>
+            </div>
+            
+            <!-- mobile menu toggle  -->
+        <label
+          for="mobile-menu-toggle"
+          class="mobile-toggle"
+          aria-label="Toggle Menu"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </label>
+        </nav>
+        
+        <!-- mobile menu overly -->
+         <label for="mobile-menu-toggle" class="mobile-overlay"></label>
     </header>
 
-    <!-- main section for landing page  -->
+    <!-- ======== main section for landing page ===== -->
      <main class="main-container" id="home">
         <div class="main-container-left animated-content">
             <h1>Be a part of our <span>family</span></h1>
@@ -38,13 +76,12 @@
 
         <div class="main-container-right">
             <div class="earth"></div>
-
-       
         </div>
      </main>
-    
-      <div class="strike-flow">
-        <div class="strike-text">
+
+     <!-- word flow for strike -->
+            <div class="word-flow">
+        <div class="word-text">
             STRIKE&nbsp;&nbsp;&nbsp;IS&nbsp;&nbsp;&nbsp;COMING&nbsp;&nbsp;&nbsp;SOON&nbsp;&nbsp;&nbsp;
             STRIKE&nbsp;&nbsp;&nbsp;IS&nbsp;&nbsp;&nbsp;COMING&nbsp;&nbsp;&nbsp;SOON&nbsp;&nbsp;&nbsp;
             STRIKE&nbsp;&nbsp;&nbsp;IS&nbsp;&nbsp;&nbsp;COMING&nbsp;&nbsp;&nbsp;SOON&nbsp;&nbsp;&nbsp;
@@ -53,89 +90,69 @@
             STRIKE&nbsp;&nbsp;&nbsp;IS&nbsp;&nbsp;&nbsp;COMING&nbsp;&nbsp;&nbsp;SOON&nbsp;&nbsp;&nbsp;
             STRIKE&nbsp;&nbsp;&nbsp;IS&nbsp;&nbsp;&nbsp;COMING&nbsp;&nbsp;&nbsp;SOON&nbsp;&nbsp;&nbsp;
             STRIKE&nbsp;&nbsp;&nbsp;IS&nbsp;&nbsp;&nbsp;COMING&nbsp;&nbsp;&nbsp;SOON&nbsp;&nbsp;&nbsp;
-            STRIKE&nbsp;&nbsp;&nbsp;IS&nbsp;&nbsp;&nbsp;COMING&nbsp;&nbsp;&nbsp;SOON&nbsp;&nbsp;&nbsp;
-                
+            STRIKE&nbsp;&nbsp;&nbsp;IS&nbsp;&nbsp;&nbsp;COMING&nbsp;&nbsp;&nbsp;SOON&nbsp;&nbsp;&nbsp;              
         </div>
     </div>
 
-    <div id="courses">
-        <h2 class="heading-title animated-content">
+  <!-- ========== course section ====== -->
+
+<div id="courses">
+<h2 class="heading-title animated-content">
          Our Upcoming <span>Launches</span>
-        </h2>
-        <div class="course-grid animated-content">
-            <!-- dsa course  -->
-            <div class="course-card">
-            <div>
-                <div class="course-category">Core Fundamentals</div>
-                <h3 class="course-title">Data Structures & Algorithms (DSA) Mastery</h3>
-                <p class="course-description">
-                Build the foundational skills required for top-tier software engineering interviews.
-                Learn common patterns, complexity analysis, and efficient problem-solving.
-                </p>
+    </h2>
 
-                <div class="course-features">
-                <h4 class="features-heading">What You Get:</h4>
-                <ul class="features-list">
-                    <li>120+ hours of video lessons</li>
-                    <li>Weekly live doubt-clearing sessions</li>
-                    <li>300+ hand-picked practice problems</li>
-                    <li>3 years access & course completion certificate</li>
-                </ul>
-                </div>
-            </div>
-
-            <div class="instructor-info">
-                <p class="instructor-label">Instructor:</p>
-                <p class="instructor-name">Rohit Negi</p>
-            </div>
-
-            <div class="course-footer">
-                <span class="launch-date">🚀 Launching: 18th October</span>
-                <a href="#" class="enroll-btn">Enroll Now</a>
-            </div>
-            </div>
-
-            <!-- gen ai course -->
-            <div class="course-card">
-                <!-- <div class="course-image-placeholder">
-                    <img src="" alt="">
-                </div> -->
-            <div class="course-details">
-            <div class="course-category pink">Cutting-Edge Tech</div>
-            <h3 class="course-title">Generative AI and LLM Engineering</h3>
-            <p class="course-description">
-            Explore the world of Large Language Models (LLMs), prompt engineering, and building real-world applications using modern Gen AI frameworks.
-            </p>
-
-            <div class="course-features">
-            <h4 class="features-heading">What You Get:</h4>
-            <ul class="features-list">
-                <li>Hands-on projects with Gemini API</li>
-                <li>Deep dives into RAG and fine-tuning</li>
-                <li>Access to a private developer community</li>
-                <li>Certification upon final project completion</li>
-            </ul>
-            </div>
-        </div>
-
-        <div class="instructor-info">
-            <p class="instructor-label">Instructor:</p>
-            <p class="instructor-name">Rohit Negi</p>
-        </div>
-
-        <div class="course-footer">
-            <span class="launch-date">🚀 Launching: 18th October</span>
-            <a href="#" class="enroll-btn">Enroll Now</a>
-        </div>
-        </div>
-
-        
-
-        </div>
+<div class="course-grid">
+  <!-- Course 1 -->
+  <div class="course-card">
+    <div class="course-image">
+          <img src="https://appxcontent.kaxa.in/paid_course3/2024-09-06-0.4703596064646134.png" alt="">
     </div>
 
-      <div class="strike-flow">
-        <div class="strike-text">
+    <div class="course-summary">
+      <h3>Data Structures & Algorithms</h3>
+      <p>Master problem-solving. 🚀 Launching 18 Oct.</p>
+    </div>
+
+    <div class="course-details">
+      <h4>What You Get:</h4>
+      <ul>
+        <li>120+ hrs video lessons</li>
+        <li>Weekly live doubt sessions</li>
+        <li>300+ hand-picked problems</li>
+        <li>Completion certificate</li>
+      </ul>
+      <a href="#" class="enroll-btn">Enroll Now</a>
+    </div>
+  </div>
+
+  <!-- Course 2 -->
+  <div class="course-card">
+    <div class="course-image">
+         <img src="https://res.cloudinary.com/devil0wagh/image/upload/v1758738293/genai_isnfd6.png" alt="">
+    </div>
+
+    <div class="course-summary">
+      <h3>Generative AI and LLM Engineering</h3>
+      <p>Explore the power of Large Language Models. 🚀</p>
+    </div>
+
+    <div class="course-details">
+      <h4>What You Get:</h4>
+      <ul>
+        <li>Hands-on projects with Gemini API</li>
+        <li>Deep dives into RAG and fine-tuning</li>
+        <li>Access to private developer community</li>
+        <li>Certification on completion</li>
+      </ul>
+      <a href="#" class="enroll-btn">Enroll Now</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- word flow for coderarmy -->
+       <div class="word-flow">
+        <div class="word-text">
             CoderArmy&nbsp;&nbsp;&nbsp;CoderArmy&nbsp;&nbsp;&nbsp;CoderArmy&nbsp;&nbsp;&nbsp;CoderArmy&nbsp;&nbsp;&nbsp;
             CoderArmy&nbsp;&nbsp;&nbsp;CoderArmy&nbsp;&nbsp;&nbsp;CoderArmy&nbsp;&nbsp;&nbsp;CoderArmy&nbsp;&nbsp;&nbsp;
             CoderArmy&nbsp;&nbsp;&nbsp;CoderArmy&nbsp;&nbsp;&nbsp;CoderArmy&nbsp;&nbsp;&nbsp;CoderArmy&nbsp;&nbsp;&nbsp;
@@ -144,9 +161,53 @@
         </div>
     </div>
 
-<!-- contact form -->
- <section id="contacts" class="contact-section">
-  <h2 class="section-title">Get In Touch</h2>
+
+<!-- ======= Instructor section ========== -->
+ <section id="about" class="instructor-section">
+  <div class="instructor-header">
+    <h2>Meet Your <span>Instructor</span></h2>
+    <p>Learn from industry experts with real-world experience and proven track records.</p>
+  </div>
+
+  <div class="instructor-container">
+    <!-- Instructor 1 -->
+    <div class="instructor-card">
+      <div class="instructor-image">
+        <img src="./image/rohit-negi.jpg" alt="Rohit Negi">
+      </div>
+      <div class="instructor-content">
+        <h3>Rohit Negi</h3>
+        <p class="role">Founder & Lead Instructor</p>
+        <p class="highlight">🎓 IIT Graduate | ₹2Cr+ Package | Industry Expert</p>
+        <p class="desc">
+          Heartfelt Problem Solver, Instructor, and Visionary Leader. Got Highest Placement in India of ₹2 Cr+. 
+          Post Graduate from IIT G, GATE-CSE'20 AIR - 202.
+        </p>
+      </div>
+    </div>
+
+    <!-- Instructor 2 -->
+    <div class="instructor-card">
+      <div class="instructor-image">
+        <img src="./image/aditya-tandon.jpg" alt="Aditya Tandon">
+      </div>
+      <div class="instructor-content">
+        <h3>Aditya Tandon</h3>
+        <p class="role">Co-Founder & Senior Instructor</p>
+        <p class="highlight">🎓 IIT Graduate | Ex. Ola</p>
+        <p class="desc">
+          Senior Software Engineer who is passionate about scalable systems and elegant algorithms. 
+          Dedicated mentor focused on teaching, learning, and inspiring future developers.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- ========= contact section =========  -->
+<section id="contacts" class="contact-section"> 
+  <h2 class="section-title">Get in <span>Touch</span></h2>
   <p class="section-subtitle">
     Have questions about our courses or launch date? Send us a message!
   </p>
@@ -171,15 +232,64 @@
   </form>
 </section>
 
-<footer class="footer">
+<!-- ======= footer section ========= -->
+ <footer class="footer-section">
   <div class="footer-container">
-    <p>&copy; 2025 Strike by CoderArmy. All rights reserved.</p>
+    <!-- Brand Info -->
+    <div class="footer-brand">
+      <h3>STRIKE</h3>
+      <p>A community of coders, making the world a better place through technology and education.</p>
+
+      </div>
+    <!-- Quick Links -->
     <div class="footer-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Company -->
+    <div class="footer-links">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+ <!-- Social -->
+    <div class="footer-social">
+      <h4>Stay Connected</h4>
+      <p>Don't let your dreams stay dreams. Build your skills with us and turn them into reality.</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/company/coderarmy/posts/?feedView=all">
+            <img src="./icon/linkedin.png" alt="">
+           </a>
+        <a href="https://www.instagram.com/coder_army9/?hl=en">
+            <img src="./icon/instagram.png" alt=""></a>
+        <a href="https://www.youtube.com/@CoderArmy9">
+          <img src="./icon/youtube.png" alt="">
+        </a>
+        <a href="https://rakibcssportfolio.netlify.app/">
+          <img src="./icon/briefcase.png" alt="">
+        </a>
+        <a href="https://github.com/rakibmondal2507/strike_clone">
+          <img src="./icon/github.png" alt="">
+        </a>
+         
+      </div>
     </div>
   </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 StrikeArmy | All Rights Reserved.</p>
+  </div>
 </footer>
+
 
 </body>
 </html>

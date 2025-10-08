@@ -1,0 +1,128 @@
+/*  Section Layout */
+.instructor-section {
+  padding: 5rem 1rem;
+  color: #e2e8f0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle glowing lines background effect */
+.instructor-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background: radial-gradient(circle at 20% 20%, rgba(59,130,246,0.15), transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(14,165,233,0.15), transparent 50%); */
+  z-index: 0;
+}
+
+/* Header */
+.instructor-header {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  margin: 0 auto 4rem;
+}
+
+.instructor-header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+.instructor-header h2 span {
+    color: #5fa7ff;
+}
+
+.instructor-header p {
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+/* Container */
+.instructor-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Cards */
+.instructor-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(59,130,246,0.2);
+  border-radius: 1.2rem;
+  max-width: 330px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(12px);
+  transform: translateY(0);
+  box-shadow: 0 0 15px rgba(59,130,246,0.05);
+}
+
+.instructor-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: rgba(59,130,246,0.4);
+  box-shadow: 0 0 25px rgba(59,130,246,0.25);
+}
+
+/* Image Section */
+.instructor-image {
+  height: 250px;
+  overflow: hidden;
+}
+
+.instructor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+  filter: grayscale(30%) brightness(0.9);
+}
+
+.instructor-card:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0%) brightness(1);
+}
+
+/* Text Content */
+.instructor-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.instructor-content h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 0.3rem;
+}
+
+.instructor-content .role {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.instructor-content .highlight {
+  color: #3b82f6;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.instructor-content .desc {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .instructor-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,35 @@
+
+/* strike word  */
+.word-flow{
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 1rem 0;
+  border-top: 1px solid #1f252d;
+  border-bottom: 1px solid #1f252d;
+  display: block;
+}
+
+@media  (max-width: 768px){
+  .word-flow{
+    display: none;
+  }
+}
+.word-text{
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.05);
+  text-transform: uppercase;
+  letter-spacing: 1.5rem;
+  line-height: 1;
+  animation: flow-strike 20s linear infinite;
+}
+
+@keyframes flow-strike{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+     transform: translate3d(-50%, 0, 0);
+     }
+}
