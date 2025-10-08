@@ -7,16 +7,6 @@
   overflow: hidden;
 }
 
-/* subtle glowing lines background effect */
-.instructor-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  /* background: radial-gradient(circle at 20% 20%, rgba(59,130,246,0.15), transparent 50%),
-              radial-gradient(circle at 80% 80%, rgba(14,165,233,0.15), transparent 50%); */
-  z-index: 0;
-}
-
 /* Header */
 .instructor-header {
   position: relative;
@@ -44,7 +34,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
   position: relative;
   z-index: 2;
 }
@@ -120,9 +110,26 @@
 }
 
 /* Responsive */
+/* ---------- Tablets ( 768px) ---------- */
 @media (max-width: 768px) {
   .instructor-container {
     flex-direction: column;
     align-items: center;
+  }
+  .instructor-header h2{
+    font-size: 2.5rem;
+  }
+  .instructor-card{
+    max-width: 300px;
+  }
+}
+
+/* ---------- Mobile (480px) ---------- */
+@media (max-width: 480px){
+  .instructor-header h1{
+    font-size: 2rem;
+  }
+    .instructor-card{
+    max-width: 280px;
   }
 }

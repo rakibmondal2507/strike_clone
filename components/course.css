@@ -19,7 +19,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  gap: 3rem;
   padding: 3rem 1rem;
 }
 
@@ -155,6 +155,7 @@
 }
 
 /* Responsive */
+/* ---------- Tablets ( 768px) ---------- */
 @media (max-width: 768px) {
   .course-grid {
     flex-direction: column;
@@ -162,14 +163,21 @@
   }
 
   .course-card {
-    width: 90%;
-    height: 430px;
+    width: 55%;
+    height: 480px;
+  }
+  .heading-title{
+    font-size: 2.5rem;
   }
 }
 
+/* ---------- Mobile (480px) ---------- */
 @media (max-width: 480px) {
+  .heading-title{
+    font-size: 2rem;
+  }
   .course-card {
-    width: 95%;
+    width: 75%;
     height: 400px;
   }
 
